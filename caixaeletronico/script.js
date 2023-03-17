@@ -25,6 +25,7 @@ function inicio () {
         break;
         case 6:
         sair();
+        break;
         default:
         erro();
         break;
@@ -84,6 +85,7 @@ function sair () {
     switch (confirma) {
         case true: 
         alert(nome + ", foi um prazer ter você por aqui!");
+        window.open("", "_blank", "");
         window.close();
         break;
         case false:
