@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 2</title>
+</head>
+<body>
+    <a href="js8.html">next</a><br>
+    <script>
+
+        var n1 = parseFloat(prompt("Insira um número"));
+        var n2 = parseFloat(prompt("Insira um número"));
+        var n3 = parseFloat(prompt("Insira um número"));
+        var n4 = parseFloat(prompt("Insira um número"));
+
+        var resultado = 0;
+
+        if (n1 > 0 || n1 <= 10){
+            resultado = resultado + n1;
+        } 
+        if (n2 > 0 || n2 <= 10){
+            resultado = resultado + n2;
+        }
+        if (n3 > 0 || n3 <= 10){
+            resultado = resultado + n3;
+        }
+        if (n4 > 0 || n4 <= 10){
+            resultado = resultado + n4;
+        }
+
+        resultado = resultado / 4;
+
+        if (resultado >= 5){
+            alert("Você passou no teste");
+        } else if (resultado < 4.9){
+            alert("Tente novamente");
+        }
+    </script>
+
+</body>
+</html>

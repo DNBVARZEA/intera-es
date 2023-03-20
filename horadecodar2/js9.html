@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 2</title>
+</head>
+<body>
+    <a href="js10.html">next</a><br>
+    <script>
+
+        function inicio() {
+            let escolha = parseFloat(prompt("Selecione uma opção \n 1.) Feminino \n 2.) Masculino"));
+
+            switch (escolha) {
+                case 1:
+                feminino();
+                break;
+                case 2:
+                masculino();
+                break;
+            }
+        }
+
+        function feminino() {
+            let h = parseFloat(prompt("Insira a sua altura"));
+            let r = (62.1 * h) - 44.7;
+            alert("Esse é o seu peso ideal " + r + " Kg");
+        }
+
+        function masculino() {
+            let h = parseFloat(prompt("Insira a sua altura"));
+            let r = (72.7 * h) - 58;
+            alert("Esse é o seu peso ideal " + r + " Kg");
+        }
+
+    inicio();
+    </script>
+
+</body>
+</html>
