@@ -10,19 +10,12 @@
 
     <script>
 
-        let soma = 0;
-        let v = 15;
-        let num_elementos = 0;
+        let n = parseInt(prompt("Insira um valor"));
 
-        while(v <= 100){
-            soma += v;
-            v++;
-            num_elementos++;
+        while(n >= 1) {
+            document.write(n, "<br>");
+            n --;
         }
-        
-        let media = soma / num_elementos;
-
-        alert("A média aritimética é: " + media);
 
     </script>
     

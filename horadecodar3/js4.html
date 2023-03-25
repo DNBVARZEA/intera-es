@@ -11,15 +11,16 @@
     <script>
 
         let soma = 0;
-        let v = 15;
+        let n1 = parseInt(prompt("Insira um valor"));
+        let n2 = parseInt(prompt("Insira um valor maior"));
         let num_elementos = 0;
-
-        while(v <= 100){
-            soma += v;
-            v++;
+        
+        while(n1 <= n2){
+            soma += n1;
+            n1++;
             num_elementos++;
         }
-        
+
         let media = soma / num_elementos;
 
         alert("A média aritimética é: " + media);

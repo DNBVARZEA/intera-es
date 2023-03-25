@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3</title>
+</head>
+<body>
+
+    <script>
+
+        let sm = 0;
+
+        for (let i = 1; i <= 6; i++) {
+            let n = parseFloat(prompt(`Informe a ${i}ª nota:`));
+
+            while (n < 0 || n > 10 || isNaN(n)) {
+                n = parseFloat(prompt(`nota inválida. Informe a ${i}ª nota novamente:`));
+            }
+            sm += n;
+        }
+
+        let media = sm / 6;
+        alert(`A média do aluno é: ${media}`);
+
+    </script>
+</body>
+</html>

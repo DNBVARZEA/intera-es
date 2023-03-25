@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3</title>
+</head>
+<body>
+
+    <script>
+
+        let dentroDoIntervalo = 0;
+        let foraDoIntervalo = 0;
+
+        for(let i = 1; i <= 10; i++) {
+        let valor = parseInt(prompt(`Informe o valor ${i}:`));
+
+        if(valor >= 24 && valor <= 42) {
+            dentroDoIntervalo++;
+        } else {
+            foraDoIntervalo++;
+        }
+        }
+
+        document.write(`Valores dentro do intervalo: ${dentroDoIntervalo}`);
+        document.write("<br>");
+        document.write(`Valores fora do intervalo: ${foraDoIntervalo}`);
+
+    </script>
+    
+</body>
+</html>

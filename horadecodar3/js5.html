@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3</title>
+</head>
+<body>
+
+    <script>
+
+        let nAlunosA = 0;
+
+        function aluno() {
+        let n1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+        let n2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+    
+        let media = (n1 + n2) / 2;
+
+        if (media >= 9.5) {
+            nAlunosA++;
+        }
+        outro();
+        }
+
+        function outro() {
+        let r = prompt("Calcular a média de outro aluno? SIM ou NÃO").toUpperCase();
+
+        switch (r) {
+            case "S":
+            aluno();
+            break;
+            default:
+            alert("Quantidade de aluno aprovados " + nAlunosA);
+        }
+        }
+
+        aluno();
+
+    </script>
+    
+</body>
+</html>

@@ -10,19 +10,16 @@
 
     <script>
 
-        let soma = 0;
-        let v = 15;
-        let num_elementos = 0;
+        const n = parseInt(prompt("Gostaria de ver todas as tabuadas do 1 ao:"));
 
-        while(v <= 100){
-            soma += v;
-            v++;
-            num_elementos++;
+        for (let i = 1; i <= n; i++) {
+        document.write(`Tabuada de ${i}: `);
+        for (let j = 1; j <= 10; j++) {
+            document.write(` | ${i} x ${j} = ${i*j}`);
         }
-        
-        let media = soma / num_elementos;
+        document.write("<br><br>");
+        }
 
-        alert("A média aritimética é: " + media);
 
     </script>
     
