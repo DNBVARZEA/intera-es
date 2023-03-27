@@ -9,15 +9,15 @@
 <body>
     <script>
         let nome = prompt("Insira o seu nome");
-alert("Olá " + nome + " é um prazer ter você por aqui!");
+        alert("Olá " + nome + " é um prazer ter você por aqui!");
 
-let saldo = 10;
-let senha = 3589;
+        let saldo = 10;
+        let senha = 3589;
 
-function inicio () {
-    let escolha = parseFloat(prompt("Selecione uma opção \n 1.) Saldo \n 2.) Extrato \n 3.) Saque \n 4.) Depósito \n 5.) Transferência \n 6.) Sair"));
+    function inicio () {
+        let escolha = parseFloat(prompt("Selecione uma opção \n 1.) Saldo \n 2.) Extrato \n 3.) Saque \n 4.) Depósito \n 5.) Transferência \n 6.) Sair"));
 
-    switch (escolha) {
+        switch (escolha) {
         case 1:
         ver_saldo();
         break;
@@ -55,8 +55,8 @@ function fazer_deposito () {
     let deposito = parseFloat(prompt("Qual é o valor para depósito?"));
     switch (isNaN(deposito) || deposito === "" || deposito <= 0) {
         case true:
-        fazer_deposito();
         alert("Operação não autorizada");
+        fazer_deposito();
         break;
         case false:
         saldo += deposito;
