@@ -47,6 +47,7 @@ function ver_saldo () {
         alert("Seu saldo atual é: " + saldo);
         inicio();
     } else {
+        alert("Senha errada!!");
         ver_saldo();
     }
 }
@@ -79,6 +80,7 @@ function fazer_saque () {
             alert("O seu saldo é: " + saldo);
             inicio();
         } else {
+            alert("Senha errada!!");
             fazer_saque();
         }
         break;
@@ -109,6 +111,7 @@ function extrato () {
         alert("Depósito de R$100,00\n" + "Saque de R$50,00");
         inicio();
     } else {
+        alert("Senha errada!!");
         extrato();
     }
 }
@@ -132,6 +135,9 @@ function transferencia () {
                 saldo -= valor_tranfer
                 alert("Seu saldo é: " + saldo);
                 inicio();
+            } else {
+                alert("Senha errada!!");
+                transferencia();
             }
             break;
         }
