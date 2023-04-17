@@ -441,10 +441,10 @@
     }
 
     function ar_condicionado() {
-    var stop = 1;
-    var companies = [];
+        var stop = 1;
+        var companies = [];
 
-   while(stop) {
+    while(stop) {
         var companie = prompt(`Qual o nome da empresa?`) || `Empresa ${companies.length + 1}`;
         var pricePerDevice = parseFloat(prompt("Qual o valor por aparelho?"));
         while(pricePerDevice < 0 || !pricePerDevice) {
@@ -466,7 +466,7 @@
         }
    }
 
-   const melhorOrçamento = companies.reduce((a, b) => {
+    const melhorOrçamento = companies.reduce((a, b) => {
     return a.budget < b.budget ? a : b;
    })
 
