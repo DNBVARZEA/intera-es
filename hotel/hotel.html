@@ -178,6 +178,11 @@
         }
     }
 
+    function listar() {
+        alert(`Hóspedes cadastrados(as):\n${name_host.join('\n')}`);
+        inicio();
+    }
+
     function sair() {
         alert(`Muito obrigado e até logo, ${nome}.`);
         inicio();
@@ -438,6 +443,7 @@
         break;
     }
     alert(`${nome}, é mais barato abastecer com ${combustivelMaisAtraente} no posto ${postoMaisBarato}`);
+    inicio();
     }
 
     function ar_condicionado() {
@@ -460,19 +466,18 @@
         var budget = device >= minDeviceDiscount ? (pricePerDevice * device) * ((100 - discount) / 100) : pricePerDevice * device;
 
         companies.push({companie, budget});
-        alert(`O serviço da ${companie} custará ${budget.toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`)
+        alert(`O serviço da ${companie} custará ${budget.toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`);
         if(prompt(`Deseja informar novos dados, ${nome}? (S/N)`).toLocaleLowerCase() == "n") {
             stop = 0;
         }
-   }
+    }
+        const melhorOrcamento = companies.reduce((a, b) => {
+        return a.budget < b.budget ? a : b;
+    });
 
-    const melhorOrçamento = companies.reduce((a, b) => {
-    return a.budget < b.budget ? a : b;
-   })
-
-   alert(`O orçamento de menor valor é o: ${melhorOrçamento.companie} por ${melhorOrçamento.budget.toLocaleString("pt-br", {styles: "currency", currency: "BRL"})}`);
-   inicio();
-}
+    alert(`O orçamento de menor valor é o: ${melhorOrcamento.companie} por ${melhorOrcamento.budget.toLocaleString("pt-br", {styles: "currency", currency: "BRL"})}`);
+    inicio();
+    }
 
     senha();
     
